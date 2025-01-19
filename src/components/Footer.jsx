@@ -1,18 +1,17 @@
-import { FaDiscord, FaTwitter, FaYoutube, FaMedium } from "react-icons/fa";
+import { FaInstagram, FaLinkedin} from "react-icons/fa";
 
 const socialLinks = [
-  { href: "https://discord.com", icon: <FaDiscord /> },
-  { href: "https://twitter.com", icon: <FaTwitter /> },
-  { href: "https://youtube.com", icon: <FaYoutube /> },
-  { href: "https://medium.com", icon: <FaMedium /> },
+  { href: "https://www.instagram.com/finvest_snu/", icon: <FaInstagram /> },
+  { href: "https://in.linkedin.com/company/finvestsnu", icon: <FaLinkedin /> },
+  
 ];
 
 const Footer = () => {
   return (
-    <footer className="w-screen bg-[#8175eb] py-4 text-black">
+    <footer className="w-screen bg-[#56a7d8] py-4 text-black">
       <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 md:flex-row">
-        <p className="text-center text-sm font-light md:text-left">
-          ©someone 2025. Its my website hehe
+        <p className="text-center text-sm md:text-left">
+          ©Finvest 2025
         </p>
 
         <div className="flex justify-center gap-4  md:justify-start">
@@ -33,7 +32,7 @@ const Footer = () => {
           href="#privacy-policy"
           className="text-center text-sm font-light hover:underline md:text-right"
         >
-          Privacy Policy
+          
         </a>
       </div>
     </footer>

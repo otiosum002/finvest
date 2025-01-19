@@ -67,7 +67,7 @@ const upcomingEvents = [
 
 const Events = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen ">
       {/* Featured Event Hero Section */}
       <div className="relative">
         <div className="absolute inset-0">
@@ -132,7 +132,7 @@ const Events = () => {
       </div>
 
       {/* Upcoming Events Section */}
-      <div className="bg-white">
+      <div className="">
         <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             <h2 className="text-2xl font-bold text-gray-900">Upcoming Events</h2>
@@ -167,9 +167,6 @@ const Events = () => {
               </Card>
             ))}
           </div>
-          <Button className="mt-8 w-full sm:hidden">
-            View All Events <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
         </div>
       </div>
 

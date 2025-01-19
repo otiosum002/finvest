@@ -1,17 +1,13 @@
 import React from 'react';
 
 const sponsors = [
-  { name: 'Acme Financial', logo: '/placeholder.svg' },
-  { name: 'Green Investments', logo: '/placeholder.svg' },
-  { name: 'Money Matters', logo: '/placeholder.svg' },
-  { name: 'Wealth Wise', logo: '/placeholder.svg' },
-  { name: 'Eco Finance', logo: '/placeholder.svg' },
-  { name: 'Future Fund', logo: '/placeholder.svg' },
+  { name: 'AMD', logo: '/placeholder.svg', website: 'https://www.amd.com/en.html' },
+  { name: 'Blue Bells', logo: '/placeholder.svg', website: 'https://bluebellstechnosolutions.com/' },
 ];
 
 const Sponsors = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
@@ -27,17 +23,18 @@ const Sponsors = () => {
               key={sponsor.name}
               className="col-span-1 flex justify-center items-center bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 p-8"
             >
-              <img
-                src={sponsor.logo || "/placeholder.svg"}
-                alt={sponsor.name}
-                width={180}
-                height={80}
-                className="max-h-12 object-contain"
-              />
+              <a href={sponsor.website} target="_blank" rel="noopener noreferrer">
+                <img
+                  src={sponsor.logo || "/placeholder.svg"}
+                  alt={sponsor.name}
+                  width={180}
+                  height={80}
+                  className="max-h-12 object-contain"
+                />
+              </a>
             </div>
           ))}
         </div>
-        
       </div>
     </div>
   );

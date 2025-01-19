@@ -1,10 +1,11 @@
+import { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
 import { useWindowScroll } from "react-use";
-import { useEffect, useRef, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa"; // Import hamburger and close icons
+import { Link } from "react-router-dom"; // Import Link for client-side routing
 
 // Updated navItems array with new items
-const navItems = ["BookNow", "Sponsors", "About", "Event", "Home", "Contact Us"];
+const navItems = ["Book Now", "Sponsors", "About", "Event", "Home", "Contact Us"];
 
 const NavBar = () => {
   // State for mobile menu visibility
@@ -38,7 +39,7 @@ const NavBar = () => {
 
   useEffect(() => {
     gsap.to(navContainerRef.current, {
-      y: isNavVisible ? 0 : -100,
+      y: isNavVisible ? -20 : -60,  // Reduced y-value to make it less drastic
       opacity: isNavVisible ? 1 : 0,
       duration: 0.2,
     });
@@ -51,7 +52,7 @@ const NavBar = () => {
   return (
     <div
       ref={navContainerRef}
-      className="fixed inset-x-0 top-4 z-50 h-16 border-none transition-all duration-700 sm:inset-x-6 bg-gray-900" // Added bg-gray-900 for a solid background
+      className="fixed inset-x-0 top-4 z-50 h-16 border-none transition-all duration-700 sm:inset-x-6 bg-gray-900"
     >
       <header className="absolute top-1/2 w-full -translate-y-1/2">
         <nav className="flex size-full items-center justify-between px-4">
@@ -80,13 +81,13 @@ const NavBar = () => {
             {/* Navigation Links (Desktop) */}
             <div className="hidden md:flex h-full items-center space-x-6">
               {navItems.map((item, index) => (
-                <a
+                <Link
                   key={index}
-                  href={`#${item.toLowerCase().replace(/\s+/g, '-')}`} // Updated the link to use hyphens instead of spaces
+                  to={item === "Home" ? "/" : `/${item.toLowerCase().replace(/\s+/g, '-')}`} // Home links to "/"
                   className="nav-hover-btn"
                 >
                   {item}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -95,16 +96,16 @@ const NavBar = () => {
 
       {/* Mobile Navigation Links */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-gray-800 p-4 mt-16"> {/* Added mt-16 to create space below the navbar */}
+        <div className="md:hidden bg-gray-800 p-4 mt-16">
           {navItems.map((item, index) => (
-            <a
+            <Link
               key={index}
-              href={`#${item.toLowerCase().replace(/\s+/g, '-')}`} // Updated the link to use hyphens instead of spaces
-              className="block py-2 text-white text-sm" // Reduced text size with text-sm
+              to={item === "Home" ? "/" : `/${item.toLowerCase().replace(/\s+/g, '-')}`} // Home links to "/"
+              className="block py-2 text-white text-sm"
               onClick={toggleMobileMenu} // Close menu on item click
             >
               {item}
-            </a>
+            </Link>
           ))}
         </div>
       )}

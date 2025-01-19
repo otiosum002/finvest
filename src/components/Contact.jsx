@@ -3,25 +3,24 @@ import Button from "./Button";
 
 const ImageClipBox = ({ src, clipClass }) => (
   <div className={clipClass}>
-    <img src={src} />
+    <img src={src} alt="clip" />
   </div>
 );
 
+// Updated teamMembers array with images
+const teamMembers = [
+  { name: "John Doe", phone: "+1 234 567 890", image: "/img/john-doe.jpg" },
+  { name: "Jane Smith", phone: "+1 234 567 891", image: "/img/jane-smith.jpg" },
+  { name: "Samuel Green", phone: "+1 234 567 892", image: "/img/samuel-green.jpg" },
+  { name: "Alex Johnson", phone: "+1 234 567 893", image: "/img/alex-johnson.jpg" },
+  { name: "Emily White", phone: "+1 234 567 894", image: "/img/emily-white.jpg" },
+  { name: "David Brown", phone: "+1 234 567 895", image: "/img/david-brown.jpg" },
+];
+
 const Contact = () => {
   return (
-    <div id="contact" className="my-20 min-h-96 w-screen  px-10">
+    <div id="contact" className="my-20 min-h-96 w-screen px-10">
       <div className="relative rounded-lg bg-black py-24 text-blue-50 sm:overflow-hidden">
-        <div className="absolute -left-20 top-0 hidden h-full w-72 overflow-hidden sm:block lg:left-20 lg:w-96">
-          <ImageClipBox
-            src="/img/contact-1.webp"
-            clipClass="contact-clip-path-1"
-          />
-          <ImageClipBox
-            src="/img/contact-2.webp"
-            clipClass="contact-clip-path-2 lg:translate-y-40 translate-y-60"
-          />
-        </div>
-
         <div className="absolute -top-40 left-20 w-60 sm:top-1/2 md:left-auto md:right-10 lg:top-20 lg:w-80">
           <ImageClipBox
             src="/img/swordman-partial.webp"
@@ -34,17 +33,30 @@ const Contact = () => {
         </div>
 
         <div className="flex flex-col items-center text-center">
-          <p className="mb-10 font-general text-[10px] uppercase">
-            Join Finvest
-          </p>
+          <p className="mb-10 font-general text-[10px] uppercase">Join Mint Money</p>
 
           <AnimatedTitle
-            title="let&#39;s b<b>u</b>ild the <br /> new era of <br /> fin<b>a</b>nce t<b>o</b>gether."
+            title="Meet The Members"
             className="special-font !md:text-[6.2rem] w-full font-zentry !text-5xl !font-black !leading-[.9]"
           />
-
-          <Button title="contact us" containerClass="mt-10 cursor-pointer" />
         </div>
+      </div>
+
+      {/* Meet the Members Section */}
+      <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 text-white">
+        {teamMembers.map((member, index) => (
+          <div key={index} className="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <div className="flex justify-center mb-4">
+              <img
+                src={member.image}
+                alt={member.name}
+                className="w-24 h-24 rounded-full object-cover"
+              />
+            </div>
+            <h3 className="text-2xl font-bold text-center">{member.name}</h3>
+            <p className="text-xl mt-2 text-center">{member.phone}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
