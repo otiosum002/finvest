@@ -5,7 +5,7 @@ const GoogleFormEmbed = () => {
     <div className="py-20">
         <div style={{ position: 'relative', width: '100%', height: '100vh', overflow: 'hidden' }}>
         <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSc0TzVAhF0pGD3wc6T5O8NtDBPS884SB3M94Xb9Efk9rsURVQ/viewform?embedded=true"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSetP4c0fxfYMrXdMJL_2Ab8u_H6t7FMqTD9OKUqDo-y6VwMHQ/viewform?embedded=true"
             style={{
             position: 'absolute',
             top: 0,

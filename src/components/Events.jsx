@@ -28,36 +28,35 @@ const CardContent = ({ children, className }) => (
 );
 
 const featuredEvent = {
-  title: "Future of FinTech Summit 2024",
-  date: "March 15, 2024",
-  time: "9:00 AM - 5:00 PM EST",
-  location: "Financial District Conference Center, New York",
-  description: "Join industry leaders and innovators for a day of insights into the latest financial technology trends and investment strategies. Network with professionals and learn about the future of digital finance.",
+  title: "Where Finance Meets Future – Invest in Knowledge, Harvest Returns!",
+  date: "Feburary 2, 2024",
+  time: "10:00 AM - 6:00 PM",
+  location: "Shiv Nadar Institution of Eminence, Delhi NCR",
+  description: "Get ready for a day packed with insights, inspiration, and financial wisdom at Mint Money 2025, the flagship event hosted by Finvest, the Finance and Investing Club of Shiv Nadar Institution of Eminence. Whether you're a curious beginner, a seasoned investor, or just someone passionate about personal finance, this event is your one-stop shop to unlock the secrets of building wealth in today’s dynamic world.",
   image: "/placeholder.svg?height=400&width=800",
   speakers: [
-    { name: "Sarah Chen", role: "Investment Strategist", image: "/placeholder.svg?height=100&width=100" },
-    { name: "Michael Roberts", role: "Tech Analyst", image: "/placeholder.svg?height=100&width=100" },
-    { name: "Lisa Thompson", role: "Blockchain Expert", image: "/placeholder.svg?height=100&width=100" },
+    { name: "Keki Mistry", role: "Former CEO and Chairman, HDFC Limited", image: "/placeholder.svg?height=100&width=100" },
+    { name: "Amit Dua", role: "Senior Vice President, IndusInd Bank", image: "/placeholder.svg?height=100&width=100" },
   ]
 };
 
 const upcomingEvents = [
   {
-    title: "Cryptocurrency Workshop",
+    title: "Snifty",
     date: "March 20, 2024",
     time: "2:00 PM EST",
     location: "Virtual Event",
     image: "/placeholder.svg?height=200&width=300"
   },
   {
-    title: "Investment Masterclass",
+    title: "Finverse",
     date: "March 25, 2024",
     time: "3:00 PM EST",
     location: "Boston Convention Center",
     image: "/placeholder.svg?height=200&width=300"
   },
   {
-    title: "Market Analysis Seminar",
+    title: "Learners' Community",
     date: "April 5, 2024",
     time: "10:00 AM EST",
     location: "Chicago Financial Hub",
@@ -72,14 +71,15 @@ const Events = () => {
       <div className="relative">
         <div className="absolute inset-0">
           <img
-            src={featuredEvent.image || "/placeholder.svg"}
+            src="/img/entrance.webp"
+
             alt={featuredEvent.title}
             className="object-cover brightness-50 w-full h-full"
           />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 py-24 sm:px-6 lg:px-8 text-white">
           <span className="inline-flex items-center rounded-md bg-green-500/10 px-3 py-1 text-sm font-medium text-green-400 ring-1 ring-inset ring-green-500/20">
-            Featured Event
+            Mint Money 2025
           </span>
           <h1 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
             {featuredEvent.title}

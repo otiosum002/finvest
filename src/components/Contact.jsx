@@ -7,14 +7,12 @@ const ImageClipBox = ({ src, clipClass }) => (
   </div>
 );
 
-// Updated teamMembers array with images
+// Updated teamMembers array with positions
 const teamMembers = [
-  { name: "John Doe", phone: "+1 234 567 890", image: "/img/john-doe.jpg" },
-  { name: "Jane Smith", phone: "+1 234 567 891", image: "/img/jane-smith.jpg" },
-  { name: "Samuel Green", phone: "+1 234 567 892", image: "/img/samuel-green.jpg" },
-  { name: "Alex Johnson", phone: "+1 234 567 893", image: "/img/alex-johnson.jpg" },
-  { name: "Emily White", phone: "+1 234 567 894", image: "/img/emily-white.jpg" },
-  { name: "David Brown", phone: "+1 234 567 895", image: "/img/david-brown.jpg" },
+  { name: "Preksha", phone: "+1 234 567 890", position: "Secretary", image: "/img/john-doe.jpg" },
+  { name: "Neerja", phone: "+1 234 567 891", position: "PR Lead", image: "/img/jane-smith.jpg" },
+  { name: "Armaan", phone: "+1 234 567 892", position: "Tech Lead", image: "/img/samuel-green.jpg" },
+  { name: "Darpin", phone: "+1 234 567 893", position: "Marketing Head", image: "/img/alex-johnson.jpg" },
 ];
 
 const Contact = () => {
@@ -55,6 +53,7 @@ const Contact = () => {
             </div>
             <h3 className="text-2xl font-bold text-center">{member.name}</h3>
             <p className="text-xl mt-2 text-center">{member.phone}</p>
+            <p className="text-lg mt-2 text-center text-gray-400">{member.position}</p>
           </div>
         ))}
       </div>
