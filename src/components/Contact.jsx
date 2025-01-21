@@ -1,5 +1,4 @@
 import AnimatedTitle from "./AnimatedTitle";
-import Button from "./Button";
 
 const ImageClipBox = ({ src, clipClass }) => (
   <div className={clipClass}>
@@ -23,11 +22,13 @@ const Contact = () => {
           <p className="mb-10 font-general text-[10px] uppercase">Join Mint Money</p>
 
           <AnimatedTitle
-            title="Meet The Members"
+            title="Meet Fin<b>v<b>est Family"
             className="special-font !md:text-[6.2rem] w-full font-zentry !text-5xl !font-black !leading-[.9]"
           />
         </div>
       </div>
+
+      
 
       {/* Meet the Members Section */}
       <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 text-white">
@@ -45,6 +46,13 @@ const Contact = () => {
             <p className="text-lg mt-2 text-center text-gray-400">{member.position}</p>
           </div>
         ))}
+        
+      </div>
+      {/* New Paragraph Section */}
+      <div className="text-center text-lg text-slate-800 mt-10">
+        <p>
+          At Finvest, we’re a family bound by our shared interest in all things finance. With students across different years and majors, we’re a team that thrives on diversity, blending different perspectives, ideas, and skills to compound our strengths and balance our ambitions. Whether we're diving into market trends or brainstorming the next big idea, we know that great things happen when we invest in each other’s potential. Now, as we gear up to host you at Mint Money 2025, we’re ready to cash in on months of hard work, creativity, and relentless dedication. Get ready – this isn’t just an event, it’s the moment we’ve all been waiting for, and we can’t wait to have you join us for the ultimate showcase of innovation, passion, and finance!
+        </p>
       </div>
     </div>
   );

@@ -40,7 +40,7 @@ const About = () => {
         />
 
         <div className="about-subtext">
-          <p>Welcome to Mint Money</p>
+          <p></p>
           <p className="text-gray-500">
             
           </p>

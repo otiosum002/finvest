@@ -1,8 +1,8 @@
 import React from 'react';
 
 const sponsors = [
-  { name: 'AMD', logo: '/placeholder.svg', website: 'https://www.amd.com/en.html' },
-  { name: 'Blue Bells', logo: '/placeholder.svg', website: 'https://bluebellstechnosolutions.com/' },
+  { name: 'AMD', img: 'img/amd.png', website: 'https://www.amd.com/en.html' },
+  { name: 'Blue Bells', img: 'img/bluebells.png', website: 'https://bluebellstechnosolutions.com/' },
 ];
 
 const Sponsors = () => {

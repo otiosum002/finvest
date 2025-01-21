@@ -103,15 +103,10 @@ const Features = () => (
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
         <p className="font-circular-web text-lg text-blue-50">
-          About Mint Money
+          About Finvest
         </p>
         <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
-          <ul>
-            <li>Keynote sessions</li>
-            <li>Panel discussions</li>
-            <li>Competitions</li>
-            <li>Interactive workshops</li>
-          </ul>
+        At Finvest, we believe that financial literacy is the key to unlocking a world of opportunities. As the Finance and Investing Club of Shiv Nadar Institution of Eminence, our mission is to inspire students to explore, learn, and lead in the dynamic world of finance.
         </p>
       </div>
       {/* BentoTilt and BentoCard components 
