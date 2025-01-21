@@ -9,10 +9,10 @@ const ImageClipBox = ({ src, clipClass }) => (
 
 // Updated teamMembers array with positions
 const teamMembers = [
-  { name: "Armaan", phone: "+91 98116 34813", position: "Secretary", image: "/img/john-doe.jpg" },
-  { name: "Dirpin", phone: "+91 98116 48881", position: "Freshman coordinator", image: "/img/jane-smith.jpg" },
-  { name: "Samarth", phone: "+91 74284 10831", position: "Associate Secretary", image: "/img/samuel-green.jpg" },
-  { name: "Piyush", phone: "+91 99719 96149", position: "Associate Secretary", image: "/img/alex-johnson.jpg" },
+  { name: "Armaan Grover", phone: "+91 98116 34813", position: "Secretary", image: "/img/john-doe.jpg" },
+  { name: "Darpin Mevcha", phone: "+91 98116 48881", position: "Freshman coordinator", image: "/img/jane-smith.jpg" },
+  { name: "Samarth Verma", phone: "+91 74284 10831", position: "Associate Secretary", image: "/img/samuel-green.jpg" },
+  { name: "Piyush Mahajan", phone: "+91 99719 96149", position: "Associate Secretary", image: "/img/alex-johnson.jpg" },
 ];
 
 const Contact = () => {

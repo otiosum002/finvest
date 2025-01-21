@@ -9,6 +9,7 @@ import Events from "./components/Events";
 import Sponsors from "./components/Sponsors";
 import Contact from "./components/Contact";
 import GoogleFormEmbed from './components/GoogleForm';
+import BookNowPage from './components/Button1';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <main className="relative min-h-screen w-screen overflow-x-hidden">
         <NavBar />
         <Routes>
-          <Route path="/" element={<><Hero /> <About/> <Features/></>} />
+          <Route path="/" element={<><Hero /> <BookNowPage/> <About/> <Features/></>} />
           <Route path="/book-now" element={<GoogleFormEmbed />} />
           <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/about" element={<AboutFinvest />} />
