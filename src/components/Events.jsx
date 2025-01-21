@@ -46,21 +46,24 @@ const upcomingEvents = [
     date: "March 20, 2024",
     time: "2:00 PM EST",
     location: "Virtual Event",
-    image: "/placeholder.svg?height=200&width=300"
+    image: "img/snifty.png?height=200&width=300",
+    description: "A thrilling battle of wits and strategy! Teams clashed in the ultimate commodities market showdown, analyzing trends, striking deals, and outmaneuvering rivals to build unstoppable portfolios. It wasn’t just about numbers - it was about outsmarting everyone else and walking away as the reigning Snifty champions!"
   },
   {
     title: "Finverse",
     date: "March 25, 2024",
     time: "3:00 PM EST",
     location: "Boston Convention Center",
-    image: "/placeholder.svg?height=200&width=300"
+    image: "img/finverse.png?height=200&width=300",
+    description: "The future was here, and it was electric! Students jumped into a fictional metaverse, playing the role of crypto tycoons. From bold investments in digital currencies to high-stakes NFT auctions, the competition was fierce, the strategies were sharp, and the thrill of victory was unmatched."
   },
   {
     title: "Learners' Community",
     date: "April 5, 2024",
     time: "10:00 AM EST",
     location: "Chicago Financial Hub",
-    image: "/placeholder.svg?height=200&width=300"
+    image: "img/learn.png?height=200&width=300",
+    description: "Who said learning finance can’t be fun? Our workshops and expert talks turned complex financial concepts into exciting, real-world tools. Whether it was decoding personal finance hacks or mastering the stock market, students left these sessions feeling like future CEOs armed and ready to conquer the world!"
   }
 ];
 
@@ -149,20 +152,10 @@ const Events = () => {
                 <CardContent>
                   <h3 className="font-semibold text-gray-900">{event.title}</h3>
                   <div className="mt-4 space-y-2 text-sm text-gray-500">
-                    <div className="flex items-center gap-2">
-                      <Calendar className="h-4 w-4" />
-                      {event.date}
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Clock className="h-4 w-4" />
-                      {event.time}
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <MapPin className="h-4 w-4" />
-                      {event.location}
+                    <div>
+                      {event.description}
                     </div>
                   </div>
-                  <Button className="mt-4 w-full">Learn More</Button>
                 </CardContent>
               </Card>
             ))}
