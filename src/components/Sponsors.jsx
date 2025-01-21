@@ -2,7 +2,7 @@ import React from 'react';
 
 const sponsors = [
   { name: 'AMD', image: "img/amd.jpeg?", website: 'https://www.amd.com/en.html' },
-  { name: 'Blue Bells', image: "img/bluebells.jpeg?", website: 'https://bluebellstechnosolutions.com/' },
+  { name: 'Blue Bells', image: "img/bluebells.jpeg?", website: 'https://www.bluebells.org/' },
 ];
 
 const Sponsors = () => {
