@@ -5,7 +5,7 @@ import { FaBars, FaTimes } from "react-icons/fa"; // Import hamburger and close 
 import { Link } from "react-router-dom"; // Import Link for client-side routing
 
 // Updated navItems array with new items
-const navItems = ["Book Now", "Sponsors","Event", "Home", "Contact Us"];
+const navItems = ["Home","Book Now", "Sponsors","About","Contact Us"];
 
 const NavBar = () => {
   // State for mobile menu visibility

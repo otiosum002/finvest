@@ -20,7 +20,7 @@ function App() {
           <Route path="/" element={<><Hero /> <BookNowPage/> <About/> <Features/></>} />
           <Route path="/book-now" element={<GoogleFormEmbed />} />
           <Route path="/sponsors" element={<Sponsors />} />
-          <Route path="/about" element={<AboutFinvest />} />
+          <Route path="/about" element={<Events />} />
           <Route path="/event" element={<Events />} />
           <Route path="/contact-us" element={<Contact />} />
         </Routes>
