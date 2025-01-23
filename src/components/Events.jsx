@@ -35,8 +35,8 @@ const featuredEvent = {
   description: "Get ready for a day packed with insights, inspiration, and financial wisdom at Mint Money 2025, the flagship event hosted by Finvest, the Finance and Investing Club of Shiv Nadar Institution of Eminence. Whether you're a curious beginner, a seasoned investor, or just someone passionate about personal finance, this event is your one-stop shop to unlock the secrets of building wealth in today’s dynamic world.",
   image: "/placeholder.svg?height=400&width=800",
   speakers: [
-    { name: "Keki Mistry", role: "Former CEO and Chairman, HDFC Limited", image: "/placeholder.svg?height=100&width=100" },
-    { name: "Amit Dua", role: "Senior Vice President, IndusInd Bank", image: "/placeholder.svg?height=100&width=100" },
+    { name: "Keki Mistry", role: "Former CEO and Chairman, HDFC Limited", image: "img/u.jpeg?height=100&width=100" },
+    { name: "Amit Dua", role: "Senior Vice President, IndusInd Bank", image: "img/u1.jpeg?height=100&width=100" },
   ]
 };
 
