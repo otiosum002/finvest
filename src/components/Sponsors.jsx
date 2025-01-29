@@ -1,8 +1,10 @@
 import React from 'react';
 
 const sponsors = [
-  { name: 'AMD', image: "img/amd.jpeg?", website: 'https://www.amd.com/en.html' },
-  { name: 'Blue Bells', image: "img/bluebells.jpeg?", website: 'https://www.bluebells.org/' },
+  { name: 'AMD', image: "img/amd.jpeg", website: 'https://www.amd.com/en.html' },
+  { name: 'Blue Bells', image: "img/bluebells.jpg", website: 'https://www.bluebells.org/' },
+  { name: 'SATMOLA', image: "img/satmola_logo.png", website: 'https://online.satmola.com/' },
+  { name: 'Oddy', image: "img/oddy_logo.png", website: 'https://oddyindia.com/' },
 ];
 
 const Sponsors = () => {
@@ -23,11 +25,11 @@ const Sponsors = () => {
               key={sponsor.name}
               className="col-span-1 flex justify-center items-center bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 p-8"
             >
-              <a href={sponsor.website} target="_blank" rel="noopener noreferrer" className="w-full h-full flex justify-center items-center">
+              <a href={sponsor.website} target="_blank" rel="noopener noreferrer" className="w-full h-48 flex justify-center items-center">
                 <img
                   src={sponsor.image}
                   alt={sponsor.name}
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-full object-contain rounded-lg"
                 />
               </a>
             </div>
