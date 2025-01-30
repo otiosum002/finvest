@@ -6,6 +6,7 @@ const sponsors = [
   { name: 'SATMOLA', image: "img/satmola_logo.png", website: 'https://online.satmola.com/' },
   { name: 'Oddy', image: "img/oddy_logo.png", website: 'https://oddyindia.com/' },
   { name: 'Sadhev', image: "img/sadhev.jpeg", website: 'https://sadhev.com/' },
+  { name: 'Redbull', image: "img/sadhev.jpeg", website: 'https://redbull.com/' },
 ];
 
 const Sponsors = () => {
