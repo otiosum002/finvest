@@ -35,8 +35,11 @@ const featuredEvent = {
   description: "Get ready for a day packed with insights, inspiration, and financial wisdom at Mint Money 2025, the flagship event hosted by Finvest, the Finance and Investing Club of Shiv Nadar Institution of Eminence. Whether you're a curious beginner, a seasoned investor, or just someone passionate about personal finance, this event is your one-stop shop to unlock the secrets of building wealth in today’s dynamic world.",
   image: "/placeholder.svg?height=400&width=800",
   speakers: [
-    { name: "Keki Mistry", role: "Former CEO and Chairman, HDFC Limited", image: "img/u.jpeg?height=100&width=100" },
-    { name: "Amit Dua", role: "Senior Vice President, IndusInd Bank", image: "img/u1.jpeg?height=100&width=100" },
+    { name: "Mr. Keki Mistry", role: "Former CEO and Chairman, HDFC Limited", image: "img/u.jpeg?height=100&width=100" },
+    { name: "Mr. Amit Dua", role: "Senior Vice President, IndusInd Bank", image: "img/u1.jpeg?height=100&width=100" },
+    { name: "Mr. Abhishek Bhatia", role: "Managing Director & Partner at Boston Consulting Group", image: "img/u4.jpeg?height=100&width=100" },
+    { name: "Nidhi S Mittal", role: "Group CEO | Agency Head @ Blue Vector, Former head of brand marketing Jio Saavn", image: "img/u3.jpeg?height=100&width=100" },
+    { name: "Ajay Thakur", role: "CEO & Managing Partner, TGI SME Capital Advisors LLP, Former head BSE", image: "img/u2.jpeg?height=100&width=100" },
   ]
 };
 
