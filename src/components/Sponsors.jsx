@@ -6,7 +6,10 @@ const sponsors = [
   { name: 'SATMOLA', image: "img/satmola_logo.png", website: 'https://online.satmola.com/' },
   { name: 'Oddy', image: "img/oddy_logo.png", website: 'https://oddyindia.com/' },
   { name: 'Sadhev', image: "img/sadhev.jpeg", website: 'https://sadhev.com/' },
-  { name: 'Redbull', image: "img/sadhev.jpeg", website: 'https://redbull.com/' },
+  { name: 'Redbull', image: "img/rb.png", website: 'https://redbull.com/' },
+  { name: 'NSIC', image: "img/NSIC_logo.png", website: 'https://www.nsic.co.in/' },
+  { name: 'CocaCola', image: "img/cc.png", website: 'https://www.coca-colacompany.com/' },
+  { name: 'Union Bank of india', image: "img/ub.png", website: 'https://www.unionbankofindia.co.in/en/home' },
 ];
 
 const Sponsors = () => {
