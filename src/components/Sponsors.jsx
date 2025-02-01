@@ -1,6 +1,8 @@
 import React from 'react';
 
 const sponsors = [
+  { name: 'Union Bank of india', image: "img/ub.png", website: 'https://www.unionbankofindia.co.in/en/home' },
+  { name: 'SNU', image: "img/snu.jpeg", website: 'https://linktr.ee/SnuAdmissionsDelhiNCR?utm_source=linktree_profile_share&ltsid=d9ef2a38-c821-40c8-b1db-52494732a128' },
   { name: 'AMD', image: "img/amd.jpeg", website: 'https://www.amd.com/en.html' },
   { name: 'Blue Bells', image: "img/bluebells.jpg", website: 'https://www.bluebells.org/' },
   { name: 'SATMOLA', image: "img/satmola_logo.png", website: 'https://online.satmola.com/' },
@@ -9,7 +11,7 @@ const sponsors = [
   { name: 'Redbull', image: "img/rb.png", website: 'https://redbull.com/' },
   { name: 'NSIC', image: "img/NSIC_logo.png", website: 'https://www.nsic.co.in/' },
   { name: 'CocaCola', image: "img/cc.png", website: 'https://www.coca-colacompany.com/' },
-  { name: 'Union Bank of india', image: "img/ub.png", website: 'https://www.unionbankofindia.co.in/en/home' },
+  { name: 'Brb', image: "img/bnb.png", website: 'https://brbchips.com' },
 ];
 
 const Sponsors = () => {
